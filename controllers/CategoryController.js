@@ -1,7 +1,8 @@
 const { Category,Sequelize } = require("../models/index")
 const {Op} = Sequelize
-const CategoryController = {
 
+
+const CategoryController = {
 async create(req,res){
     try {
         const category = await Category.create(req.body)
